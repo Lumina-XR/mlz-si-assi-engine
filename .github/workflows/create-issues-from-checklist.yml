@@ -1,0 +1,31 @@
+name: Sync Markdown Checklist to GitHub Issues
+
+on:
+  workflow_dispatch:
+
+jobs:
+  create-issues:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Parse checklist and create issues
+        uses: alstr/todo-to-issue-action@v4
+        with:
+          TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPO: ${{ github.repository }}
+          LABEL: "task"
+          COMMENT_MARKER: "GITHUB-ISSUE"
+          ISSUE_TEMPLATE: "- [ ] {{text}}"
+          CLOSE_ISSUES: false
+          OPEN_ISSUES: true
+"""
+
+# Write the workflow file to the correct GitHub folder structure
+file_path = "/mnt/data/create-issues-from-checklist.yml"
+with open(file_path, "w") as f:
+    f.write(workflow_content)
+
+file_path
