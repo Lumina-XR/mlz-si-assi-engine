@@ -1,0 +1,19 @@
+name: Create Issues from Markdown Checklist
+
+on:
+  workflow_dispatch:
+
+jobs:
+  create_issues:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Extract checklist items and create issues
+        uses: peter-evans/create-issue-from-file@v4
+        with:
+          title: "📋 SI/ASSI Task Tracker: Markdown Sync"
+          content-filepath: SI_ASSI_Dev_TaskTracker_May2025.md
+          labels: task, SI, sync
+          assignees: ${{ github.actor }}
