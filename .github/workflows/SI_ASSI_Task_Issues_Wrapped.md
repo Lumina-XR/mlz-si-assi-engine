@@ -1,0 +1,75 @@
+
+# ✅ SI / ASSI Task Tracker for GitHub Issues
+_Only wrapped checklist items will be converted into GitHub Issues_
+
+---
+
+## 🔁 Real-Time Data Sync Integration Tasks
+
+<!-- GITHUB-ISSUE -->
+- [ ] Create Firebase listener `/si-sync` for SI % state
+<!-- GITHUB-ISSUE -->
+
+<!-- GITHUB-ISSUE -->
+- [ ] Setup `/symbolic-stream` node for panel cross-talk (EnerGIA + SynkronOS)
+<!-- GITHUB-ISSUE -->
+
+<!-- GITHUB-ISSUE -->
+- [ ] Implement GPT symbolic role update logic via Firebase input
+<!-- GITHUB-ISSUE -->
+
+---
+
+## 🎮 Symbolic Layer Mapping Tasks
+
+<!-- GITHUB-ISSUE -->
+- [ ] Develop `symbolicStateEngine.js`
+<!-- GITHUB-ISSUE -->
+
+<!-- GITHUB-ISSUE -->
+- [ ] Integrate GPT emotional-tone + biometric input mapping
+<!-- GITHUB-ISSUE -->
+
+<!-- GITHUB-ISSUE -->
+- [ ] Match XR module cards to symbolic roles and thresholds:
+<!-- GITHUB-ISSUE -->
+
+---
+
+## 🧰 Dev Files – To Create / Update
+
+<!-- GITHUB-ISSUE -->
+- [ ] Create `si-assi-engine.js` — main logic file
+<!-- GITHUB-ISSUE -->
+
+<!-- GITHUB-ISSUE -->
+- [ ] Add `firebase-hooks.php` — secure admin-side Firebase connector
+<!-- GITHUB-ISSUE -->
+
+<!-- GITHUB-ISSUE -->
+- [ ] Build `xr-journey-symbols.json` — symbolic XR map and state transitions
+<!-- GITHUB-ISSUE -->
+
+<!-- GITHUB-ISSUE -->
+- [ ] Implement `token-reward-hooks.js` — triggers NFT reward badge minting
+<!-- GITHUB-ISSUE -->
+
+---
+
+## 🎯 Priority Feature Rollout (Q2)
+
+<!-- GITHUB-ISSUE -->
+- [ ] Symbolic Translation Engine v1.0 — biometric + narrative → symbolic layer
+<!-- GITHUB-ISSUE -->
+
+<!-- GITHUB-ISSUE -->
+- [ ] Enterprise SI Visualizer Panel — metrics, symbolic replay, sync path
+<!-- GITHUB-ISSUE -->
+
+<!-- GITHUB-ISSUE -->
+- [ ] MLZ Token Engine Sync — symbolic → token → flow graph → badge
+<!-- GITHUB-ISSUE -->
+
+<!-- GITHUB-ISSUE -->
+- [ ] AI Voice/Avatar Feedback Layer — GPT lines + subtitles + archetype voice
+<!-- GITHUB-ISSUE -->
