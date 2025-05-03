@@ -21,7 +21,10 @@ jobs:
           ISSUE_TEMPLATE: "- [ ] {{text}}"
           CLOSE_ISSUES: false
           OPEN_ISSUES: true
-"""
+git add .github/workflows/create-issues-from-checklist.yml
+git commit -m "Fix invalid key in GitHub Actions workflow"
+git push origin main
+
 
 # Write the workflow file to the correct GitHub folder structure
 file_path = "/mnt/data/create-issues-from-checklist.yml"
