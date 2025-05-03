@@ -1,34 +1,74 @@
-name: Sync Markdown Checklist to GitHub Issues
+ ✅ SI / ASSI Task Tracker for GitHub Issues
+_Only wrapped checklist items will be converted into GitHub Issues_
 
-on:
-  workflow_dispatch:
+---
 
-jobs:
-  create-issues:
-    runs-on: ubuntu-latest
+## 🔁 Real-Time Data Sync Integration Tasks
 
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
+<!-- GITHUB-ISSUE -->
+- [ ] Create Firebase listener `/si-sync` for SI % state
+<!-- GITHUB-ISSUE -->
 
-      - name: Parse checklist and create issues
-        uses: alstr/todo-to-issue-action@v4
-        with:
-          TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          REPO: ${{ github.repository }}
-          LABEL: "task"
-          COMMENT_MARKER: "GITHUB-ISSUE"
-          ISSUE_TEMPLATE: "- [ ] {{text}}"
-          CLOSE_ISSUES: false
-          OPEN_ISSUES: true
-git add .github/workflows/create-issues-from-checklist.yml
-git commit -m "Fix invalid key in GitHub Actions workflow"
-git push origin main
+<!-- GITHUB-ISSUE -->
+- [ ] Setup `/symbolic-stream` node for panel cross-talk (EnerGIA + SynkronOS)
+<!-- GITHUB-ISSUE -->
 
+<!-- GITHUB-ISSUE -->
+- [ ] Implement GPT symbolic role update logic via Firebase input
+<!-- GITHUB-ISSUE -->
 
-# Write the workflow file to the correct GitHub folder structure
-file_path = "/mnt/data/create-issues-from-checklist.yml"
-with open(file_path, "w") as f:
-    f.write(workflow_content)
+---
 
-file_path
+## 🎮 Symbolic Layer Mapping Tasks
+
+<!-- GITHUB-ISSUE -->
+- [ ] Develop `symbolicStateEngine.js`
+<!-- GITHUB-ISSUE -->
+
+<!-- GITHUB-ISSUE -->
+- [ ] Integrate GPT emotional-tone + biometric input mapping
+<!-- GITHUB-ISSUE -->
+
+<!-- GITHUB-ISSUE -->
+- [ ] Match XR module cards to symbolic roles and thresholds:
+<!-- GITHUB-ISSUE -->
+
+---
+
+## 🧰 Dev Files – To Create / Update
+
+<!-- GITHUB-ISSUE -->
+- [ ] Create `si-assi-engine.js` — main logic file
+<!-- GITHUB-ISSUE -->
+
+<!-- GITHUB-ISSUE -->
+- [ ] Add `firebase-hooks.php` — secure admin-side Firebase connector
+<!-- GITHUB-ISSUE -->
+
+<!-- GITHUB-ISSUE -->
+- [ ] Build `xr-journey-symbols.json` — symbolic XR map and state transitions
+<!-- GITHUB-ISSUE -->
+
+<!-- GITHUB-ISSUE -->
+- [ ] Implement `token-reward-hooks.js` — triggers NFT reward badge minting
+<!-- GITHUB-ISSUE -->
+
+---
+
+## 🎯 Priority Feature Rollout (Q2)
+
+<!-- GITHUB-ISSUE -->
+- [ ] Symbolic Translation Engine v1.0 — biometric + narrative → symbolic layer
+<!-- GITHUB-ISSUE -->
+
+<!-- GITHUB-ISSUE -->
+- [ ] Enterprise SI Visualizer Panel — metrics, symbolic replay, sync path
+<!-- GITHUB-ISSUE -->
+
+<!-- GITHUB-ISSUE -->
+- [ ] MLZ Token Engine Sync — symbolic → token → flow graph → badge
+<!-- GITHUB-ISSUE -->
+
+<!-- GITHUB-ISSUE -->
+- [ ] AI Voice/Avatar Feedback Layer — GPT lines + subtitles + archetype voice
+<!-- GITHUB-ISSUE -->
