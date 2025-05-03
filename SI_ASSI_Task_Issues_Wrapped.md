@@ -1,11 +1,6 @@
+# Recreate the markdown checklist file after environment reset
 
-# ✅ SI / ASSI Task Tracker for GitHub Issues
-_Only wrapped checklist items will be converted into GitHub Issues_
-
----
-
-## 🔁 Real-Time Data Sync Integration Tasks
-
+markdown_content = """
 <!-- GITHUB-ISSUE -->
 - [ ] Create Firebase listener `/si-sync` for SI % state
 <!-- GITHUB-ISSUE -->
@@ -18,10 +13,6 @@ _Only wrapped checklist items will be converted into GitHub Issues_
 - [ ] Implement GPT symbolic role update logic via Firebase input
 <!-- GITHUB-ISSUE -->
 
----
-
-## 🎮 Symbolic Layer Mapping Tasks
-
 <!-- GITHUB-ISSUE -->
 - [ ] Develop `symbolicStateEngine.js`
 <!-- GITHUB-ISSUE -->
@@ -31,12 +22,8 @@ _Only wrapped checklist items will be converted into GitHub Issues_
 <!-- GITHUB-ISSUE -->
 
 <!-- GITHUB-ISSUE -->
-- [ ] Match XR module cards to symbolic roles and thresholds:
+- [ ] Match XR module cards to symbolic roles and thresholds
 <!-- GITHUB-ISSUE -->
-
----
-
-## 🧰 Dev Files – To Create / Update
 
 <!-- GITHUB-ISSUE -->
 - [ ] Create `si-assi-engine.js` — main logic file
@@ -54,10 +41,6 @@ _Only wrapped checklist items will be converted into GitHub Issues_
 - [ ] Implement `token-reward-hooks.js` — triggers NFT reward badge minting
 <!-- GITHUB-ISSUE -->
 
----
-
-## 🎯 Priority Feature Rollout (Q2)
-
 <!-- GITHUB-ISSUE -->
 - [ ] Symbolic Translation Engine v1.0 — biometric + narrative → symbolic layer
 <!-- GITHUB-ISSUE -->
@@ -73,3 +56,11 @@ _Only wrapped checklist items will be converted into GitHub Issues_
 <!-- GITHUB-ISSUE -->
 - [ ] AI Voice/Avatar Feedback Layer — GPT lines + subtitles + archetype voice
 <!-- GITHUB-ISSUE -->
+"""
+
+md_path = "/mnt/data/SI_ASSI_Task_Issues_Wrapped.md"
+with open(md_path, "w") as f:
+    f.write(markdown_content)
+
+md_path
+
