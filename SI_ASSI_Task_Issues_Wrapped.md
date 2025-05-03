@@ -64,3 +64,7 @@ with open(md_path, "w") as f:
 
 md_path
 
+<!-- GITHUB-ISSUE -->
+- [ ] TEST: Trigger issue creation from updated task
+<!-- GITHUB-ISSUE -->
+
