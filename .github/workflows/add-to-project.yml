@@ -1,0 +1,39 @@
+name: 📌 Auto-Add Issues to SI/ASSI Board
+
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  add-to-project:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Add issue to GitHub project
+        uses: actions/add-to-project@v0.5.0
+        with:
+          project-url: https://github.com/users/Lumina-XR/projects/1
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Apply contextual labels
+        uses: actions/github-script@v6
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const title = context.payload.issue.title.toLowerCase();
+            const labels = [];
+
+            if (title.includes("firebase")) labels.push("firebase");
+            if (title.includes("symbolic")) labels.push("symbolic");
+            if (title.includes("xr")) labels.push("XR");
+            if (title.includes("token")) labels.push("token");
+            if (title.includes("gpt")) labels.push("gpt");
+            if (title.includes("sync") || title.includes("assi")) labels.push("sync-engine");
+
+            if (labels.length > 0) {
+              await github.rest.issues.addLabels({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: context.issue.number,
+                labels: labels
+              });
+            }
