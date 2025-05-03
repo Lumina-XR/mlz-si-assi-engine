@@ -1,3 +1,7 @@
+$workflowPath = ".github\workflows"
+New-Item -ItemType Directory -Force -Path $workflowPath | Out-Null
+
+$ymlContent = @'
 name: Sync Markdown Checklist to GitHub Issues
 
 on:
@@ -21,4 +25,12 @@ jobs:
           COMMENT_MARKER: GITHUB-ISSUE
           CLOSE_ISSUES: false
           OPEN_ISSUES: true
+'@
 
+$ymlFile = "$workflowPath\create-issues-from-checklist.yml"
+$ymlContent | Set-Content -Path $ymlFile -Encoding UTF8
+
+Write-Host "✅ Workflow file created at: $ymlFile"
+
+
+   

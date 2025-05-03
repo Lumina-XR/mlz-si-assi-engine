@@ -16,9 +16,9 @@ jobs:
         with:
           TOKEN: ${{ secrets.GITHUB_TOKEN }}
           REPO: ${{ github.repository }}
-          PATHS: "SI_ASSI_Task_Issues_Wrapped.md"
           LABEL: task
           COMMENT_MARKER: GITHUB-ISSUE
           CLOSE_ISSUES: false
           OPEN_ISSUES: true
+
 
